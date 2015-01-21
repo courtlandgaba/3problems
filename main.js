@@ -20,15 +20,6 @@ console.log(sum(8, 11));
 
 
 
-
-
-
-
-
-
-
-
-
 /**
 * PART 2
 *
@@ -55,54 +46,27 @@ var getAverageTime = function(person) {
     "use strict";
 
     return (person.finishingTime1 + person.finishingTime2 + person.finishingTime3 + person.finishingTime4 + person.finishingTime5) / 5;
-    return (person.finishingTime1 + person.finishingTime2 + person.finishingTime3 + person.finishingTime4 + person.finishingTime5) / 5;
+
+
+
+    // var propArr = Object.keys(person);
+    // var lengthOfArr = propArr.length;
+    // var sum = 0;
+
+    // propArr.forEach(function(currentValue, index, arr){
+        // sum += person [currentValue];
+
+
+    // });
+
+    // var avg = sum/lengthOfArr;
+
+    // return sum;
 
 }
 
 console.log(getAverageTime(matt));
 console.log(getAverageTime(mark));
-
-
-
-
-
-
-
-for(i=0; i<=100; i++)
-{
-    if(i%3 === 0) {
-        console.log("fizz");
-    }
-
-    else if(i%5 === 0) {
-        console.log("buzz");
-    }
-    else if(i%15 === 0) {
-        console.log("fizzbuzz");
-    }
-    else {
-        console.log(i);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -144,6 +108,9 @@ function getSumOfAccounts(account) {
     "use strict";
     // return ...
     return  (account.checking + account.savings + account.retirement);
+
+
+
 }
 
 addToBank(MattsBankAccount, 100, 10, 1);
@@ -153,3 +120,37 @@ var sumOfMatts = getSumOfAccounts(MattsBankAccount);
 var sumOfRobertos = getSumOfAccounts(RobertosBankAccount);
 
 console.log(sumOfMatts - sumOfRobertos); // should calculate to -158
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PART 4
+
+for(i=1; i<=100; i++)
+{
+    if(i%15 === 0) {
+        console.log("fizzbuzz");
+    }
+
+    else if(i%5 === 0) {
+        console.log("buzz");
+    }
+    else if(i%3 === 0) {
+        console.log("fizz");
+    }
+    else {
+        console.log(i);
+    }
+}
